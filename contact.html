@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+	B00107907 Declan McGuire
+	Web & Social Media for Enterprise
+	CA1 Assignment - Website Project
+	November 2018
+	Responsive version, Built with Bootstrap in Dreamweaver
+-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marlan Systems</title>
+<meta name="title" content="Marlan Systems">
+<meta name="keywords" content="Marlan systems, CAD, Revit, BIM, 3D Modeling, AutoCAD, AEC">
+<meta name="description" content="Marlan Systems provides expertise in CAD and BIM to Irish SME's in the construction and engineering sectors.">
+
+<!-- Bootstrap added this stylesheet automatically -->
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+<!-- Bootstrap overrides are in this stylesheet edited manually -->
+<link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<!-- Body content from here -->
+
+<body id="top">
+<header><!-- added semantic tag manually as Bootstrap doesn't by defauilt --> 
+  <!-- Bootstrap nave bar, fixed to top in lieu of footer being fixed per spec -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="2D.html">2D CAD</a>
+			  <a class="dropdown-item" href="3D.html">3D CAD</a>
+			  <a class="dropdown-item" href="consult.html">Consultancy</a>
+			  <a class="dropdown-item" href="training.html">Training</a>
+		  </div>
+        </li>
+        <li><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+  <!-- Header area, auto added by Bootstrap -->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <h1 class="display-4"><strong>Marlan Systems</strong></h1>
+    <p class="lead"><strong>Contact Us</strong></p>
+  </div>
+</header>
+<div class="container">
+  <main><!-- Added main semantic tag manually as Bootstrap doesn't by default -->
+    <hr>
+    <!-- This <hr> delineates the upper main body of the page --> 
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-xl-5">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center">Contact us as follows:</h4>
+            <p><strong>By email: </strong>info@marlansystems.com</p>
+            <p><strong>By phone: </strong>+353 (0)46 902 4401</p>
+            <p><strong>By post: </strong>Dean Hill, Hayes, Navan, Co. Meath, C15 Y5T9.</p>
+            <p><strong>GPS/Nav: </strong>53.661170, -6.593676</p>
+            <p><em>Please note our offices are not open to the general public and visitors are received by appointment only.</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 offset-xl-0 col-xl-7">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center">Location Map</h4>
+            <!-- iframe is not ideal, but is all that Openstreetmap offers. Will throw warnings in validation -->
+            <iframe width="100%" height="190" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-6.705436706542969%2C53.61756112967935%2C-6.478843688964844%2C53.70239758052296&amp;layer=transportmap&amp;marker=53.66000069940216%2C-6.592140197753906" style="border: 1px solid black"></iframe>
+            <br/>
+            <small><a href="https://www.openstreetmap.org/?mlat=53.6600&amp;mlon=-6.5921#map=13/53.6600/-6.5921&amp;layers=T">View Larger Map</a></small> </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row"> <!-- fullwidth container for below the fold content -->
+      <div class="col-md-4  col-xl-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center">Something to tell us? Use this form</h4>
+            <div>
+              <form action="mailto:b00107907@student.itb.ie" method="post">
+                <br>
+                <label class="getintouch">First name: </label>
+                <input class="getintouch" type="text" name="firstname" required placeholder="Enter first name" autofocus>
+                <br>
+                <label class="getintouch">Second name: </label>
+                <input class="getintouch" type="text" name="secondname" required placeholder="Enter second name">
+                <br>
+                <label class="getintouch">E-mail:</label>
+                <input class="getintouch" type="email" name="email" required placeholder="Email address">
+                <br>
+                <label class="getintouch">Mobile:</label>
+                <input class="getintouch" type="tel" name="mobile" pattern="\d{3}[\ ]\d{3}[\ ]\d{4}" title="Phone Number Format: 089 123 4567" required placeholder="089 123 4567">
+                <br>
+                <label class="getintouch">Question or Comment:</label>
+                <textarea class="getintouch" rows="5" name="comment" required placeholder="Your question or comment here..." ></textarea>
+                <br>
+                <input id="getintouch" type="submit" name="submit" value="Submit">
+                <button id="gitreset" type="reset" value="Reset">Reset</button>
+              </form>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <!-- This <hr> delineates the lower main body of the page --> 
+  </main>
+  <footer>
+    <div class="row"> <!-- fullwidth container for footer content, divided into 3 columns -->
+      <div class="text-center col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+        <p class="text-left text-lowercase footerleft "><a href="#top">Back to top</a></p>
+      </div>
+      <div class="text-center col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+        <h5>Call Marlan Systems on 046 902 4401</h5>
+        <p>Copyright &copy; 2018 &middot; All Rights Reserved</p>
+      </div>
+      <div class="col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+        <p class="text-right footerright"><a href="sitemap.html">sitemap</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>

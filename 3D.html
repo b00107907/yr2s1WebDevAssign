@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+	B00107907 Declan McGuire
+	Web & Social Media for Enterprise
+	CA1 Assignment - Website Project
+	November 2018
+	Responsive version, Built with Bootstrap in Dreamweaver
+-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marlan Systems</title>
+<meta name="title" content="Marlan Systems">
+<meta name="keywords" content="Marlan systems, CAD, Revit, BIM, 3D Modeling, AutoCAD, AEC">
+<meta name="description" content="Marlan Systems provides expertise in CAD and BIM to Irish SME's in the construction and engineering sectors.">
+
+<!-- Bootstrap added this stylesheet automatically -->
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+<!-- Bootstrap overrides are in this stylesheet edited manually -->
+<link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<!-- Body content from here -->
+
+<body id="top">
+<header><!-- added semantic tag manually as Bootstrap doesn't by defauilt --> 
+  <!-- Bootstrap nave bar, fixed to top in lieu of footer being fixed per spec -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item dropdown"> <a class="nav-item active nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="2D.html">2D CAD</a>
+			  <a class="dropdown-item active" href="3D.html">3D CAD</a>
+			  <a class="dropdown-item" href="consult.html">Consultancy</a>
+			  <a class="dropdown-item" href="training.html">Training</a>
+		  </div>
+        </li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+  <!-- Header area, auto added by Bootstrap -->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <h1 class="display-4"><strong>Marlan Systems</strong></h1>
+    <p class="lead">BIM &amp; 3D Modeling Services</p>
+  </div>
+</header>
+<div class="container">
+  <main> 
+    <!-- Added main semantic tag manually as Bootstrap doesn't by default -->
+    <hr>
+    <!-- This <hr> delineates the upper main body of the page --> 
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-xl-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center">Compliance is key</h4>
+            <h5>Revit and BIM</h5>
+            <img class="img-fl" src="images/greentick.png" width="120" height="120" alt="tick mark"/>
+            <p>Despite the terms being used interchangeably Revit and BIM are not the same thing. This commonly held misunderstanding leads to problems with compliance because BIM is a process whereas Revit is a product. BIM standards encompass a range of design and visualisation softwares from multiple vendors while Revit is an individual AutoDesk product.</p>
+            <p>Our experts can teach you industry-proven techniques to take full advantage of BIM methodology so you can create your best designs faster, more cost-effective and more efficient than ever.</p>
+            <a href="contact.html" class="btn btn-primary">Talk to us about training</a> </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-center">Building Information Modeling (BIM)</h4>
+        <p>As stated above, <em><strong>BIM is a process not an application.</strong></em> It is based around models used for the planning, design, construction and management of building and infrastructure projects and aims to deliver these projects faster, more economically and with less environmental impact.</p>
+        <img class="img-fr" src="images/bim-model.jpg" width="275" height="164" alt="BIM Model"/>
+        <p>These BIM models are different from CAD drawings which may be 2D or 3D in nature. A BIM model is essentially a database of "intelligent objects" that have qualitative data assigned to them and are intended to be used in a collaborative manner by diverse disciplines across the project team.</p>
+        <p>Planners, Architects, Engineers and Construction professionals all use the same core model as a framework on which to build and integrate their designs in a collaborative manner to deliver the completed project.</p>
+        <p>For this reason, understanding of, and compliance to, BIM standards is essential to avoid expensive rework at a later stage. One of our core services is BIM consultancy which aims to assist organisations and individual professionals in this process.</p>
+        <a href="consult.html" class="btn btn-primary">Learn more about consulting</a> </div>
+    </div>
+    <br>
+    <hr>
+    <!-- This <hr> delineates the lower main body of the page --> 
+  </main>
+  <footer>
+    <div class="row"> <!-- fullwidth container for footer content, divided into 3 columns -->
+      <div class="text-center col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+        <p class="text-left text-lowercase footerleft "><a href="#top">Back to top</a></p>
+      </div>
+      <div class="text-center col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+        <h5>Call Marlan Systems on 046 902 4401</h5>
+        <p>Copyright &copy; 2018 &middot; All Rights Reserved</p>
+      </div>
+      <div class="col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+        <p class="text-right footerright"><a href="sitemap.html">sitemap</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>

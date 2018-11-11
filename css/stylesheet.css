@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* 
+	B00107907 Declan McGuire
+	Web & Social Media for Enterprise
+	CA1 Assignment - Website Project, responsive version
+	November 2018
+
+	These are style overrides for bootstrap-4.0.0.css
+
+*/
+
+.jumbotron {					/* This is where bootstrap put our header */
+	background-image: url('../images/banner-home.jpeg');
+	color: #FFFFFF;				/* White text */
+	text-shadow: 1px 1px 5px #2A2A2A;	/* Drop shadow for legibility */
+}
+h1.display-4 {					/* H1 override for preferred font family */
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 5em;
+}
+p.lead {						/* Text beneath H1 banner text in header block */
+	color: greenyellow;
+	font-size: 2em;
+}
+.card-body {					/* Add a shading to the cards for contrast */
+	background-color: #f6f6f6;
+}
+
+
+/* ------------------------ Additions, not overridden from Bootstrap 4 CSS ------------------------- */
+
+.footerleft {					/* Footer left side div */
+	float: left;
+}
+.footerleft a {					/* Footer left hyper links need... */
+	text-decoration: none;		/* ...underlines removed & */
+	color: #000000;				/* colour set to black. */
+}
+.footerright {					/* Footer right side div */
+	float: right;
+}
+.footerright a {				/* Footer right hyper links need... */
+	text-decoration: none;		/* ...underlines removed & */
+	color: #000000;				/* colour set to black. */
+}
+.img-fr{						/* generic right float for images */
+	float: right;
+	margin: 1%;
+}
+.img-fl{						/* generic left float for images */
+	float: left;
+	margin: 1%;
+}
+/* -------------------------------  Basic contact form styling ------------------------------ */
+
+label.getintouch {				/* Label on contact form */
+	display: block;
+	float: left;
+	width: 220px;				/* Label width defines left edge of input fields */
+	font-weight: bold;			/* Bold text */
+	font-size: 11pt;			/* Match body font size */
+}
+
+input.getintouch {				/* Contact form input fields */
+	width: 180px;				/* default width */
+	margin-bottom: 5px;			/* Gap below input field */	
+}
+
+textarea.getintouch {			/* Contact form text area box */
+	width: 300px;
+	height: 120px;
+}
+
+#getintouch {					/* Styling for Submit on Contact form */
+	margin-left: 220px;				
+	margin-top: 5px;
+	width: 90px;
+}
+
+#gitreset {						/* Reset button on contact form */
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 90px;
+}
+/* ------------------------------- Fixed width single colum layout Page (Sitemap.html) ------------------------------ */
+
+body.fixed {					/* A Class called fixed for the fixed width page @ 960px */
+	width: 960px;				/* fixed width, single column page is a requirement of the brief*/
+	margin: 0 auto;				/* center content on page */
+	background-image: linear-gradient(gray, white) /* CSS gradient is a requirement of the brief*/
+}
+.fixed ul {						/* navbar <ul> items */
+	margin: 0px;
+	padding: 0px;
+}
+section.fixed {					/* Main body of page */
+	text-align: left;
+	margin: 60px 0px 40px 100px;
+}
